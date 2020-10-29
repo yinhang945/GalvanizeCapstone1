@@ -11,3 +11,8 @@ My analysis dives into the current NYC Legally Operating Businsses database. Doe
     * [Python](#python)
     * [Visualization](#visualization)
 * [Future Improvements](#future-improvements)
+
+## General Information
+This data set features businesses/individuals holding a DCA license so that they may legally operate in New York City.DCA enforces the Consumer Protection Law and other related business laws throughout New York City. Ensuring a fair and vibrant marketplace for consumers and businesses, DCA licenses moe than 71,000 businesses in 57 different industries. Through targeted outreach, partnerships with community and trade organizations, and informational materials, DCA educates consumers and businesses alike about their rights and responsibilities.
+
+### Data Gathering:
