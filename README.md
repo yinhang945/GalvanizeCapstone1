@@ -15,7 +15,9 @@ My analysis dives into the current NYC Legally Operating Businsses database. Doe
 The Department of Consumers Affairs (DCA) administers more than 3.9 million licenses in more than 280 license types including certificates, registrations and permits, from architects to accountants, dentists to veterinarians. DCA protects and serves consumers in many ways:
 
 DCA is a licensing entity – Through its licensing entities, DCA licenses more than 3.6 million professionals and enables consumers to check the license status of these professionals online or by phone.
+
 DCA is a regulator – DCA investigates consumer complaints on issues under its jurisdiction. If violations are found, license holders can face discipline that includes probation, suspension or revocation of a license, fines and citations, letters of reprimand, or cease and desist orders.
+
 DCA is an educator – DCA educates consumers by giving them information they need to avoid being victimized by unscrupulous or unqualified people who promote deceptive or unsafe services.
 
 ## Data Information
