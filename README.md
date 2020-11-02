@@ -1,7 +1,8 @@
 # NYC Legally Operating Businesses Analysis(Draft)
 
-My analysis dives into the current NYC Legally Operating Businsses database. Does the number of new business licenses statisticaly significant drops this year compare to previous years?
+My analysis dives into the current NYC Legally Operating Businsses database. Does the number of new business licenses statisticaly significant drops this year compare to previous years? Among the top 10 industries that require licenses, which industry has the most drops in numbers of licenses created this year compared to previous two years?
 
+* [Background Introduction](#background-information)
 * [Data Information](#data-information)
     * [Data Gathering](#data-gathering)
     * [Data Cleaning](#data-cleaning)
@@ -9,6 +10,13 @@ My analysis dives into the current NYC Legally Operating Businsses database. Doe
 * [Hypothesis Testing](#hypothesis-testing)
 * [Conclusion](#conclusion)
 * [Future Analysis](#future-analysis)
+
+## Background Introduction
+The Department of Consumers Affairs (DCA) administers more than 3.9 million licenses in more than 280 license types including certificates, registrations and permits, from architects to accountants, dentists to veterinarians. DCA protects and serves consumers in many ways:
+
+DCA is a licensing entity – Through its licensing entities, DCA licenses more than 3.6 million professionals and enables consumers to check the license status of these professionals online or by phone.
+DCA is a regulator – DCA investigates consumer complaints on issues under its jurisdiction. If violations are found, license holders can face discipline that includes probation, suspension or revocation of a license, fines and citations, letters of reprimand, or cease and desist orders.
+DCA is an educator – DCA educates consumers by giving them information they need to avoid being victimized by unscrupulous or unqualified people who promote deceptive or unsafe services.
 
 ## Data Information
 This data set features businesses/individuals holding a DCA license so that they may legally operate in New York City.DCA enforces the Consumer Protection Law and other related business laws throughout New York City. Ensuring a fair and vibrant marketplace for consumers and businesses, DCA licenses moe than 71,000 businesses in 57 different industries. Through targeted outreach, partnerships with community and trade organizations, and informational materials, DCA educates consumers and businesses alike about their rights and responsibilities.
@@ -24,7 +32,7 @@ Data used for this analysis was gathered from NYCOpenData website.---------
 2)  Transform:  It was transformed into a clean pandas dataframe through custom functions, located on the ```src``` folder.
 3)  Cleansing:  ------------- 
 
-### Data Information:
+### Data Cleaning:
 Data used in the study included DCA License Number, Type(Individual/Business), License Creation/Expiration Date, Industry, and the localtion informations about the business, ie: City, Zipcode, and coordinate in NYC from April 2018 to September 2020.
 
 ### Hypothesis Testing:
