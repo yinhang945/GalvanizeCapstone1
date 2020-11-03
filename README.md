@@ -1,35 +1,46 @@
 # NYC Legally Operating Businesses Analysis(Draft)
 
-My analysis dives into the current NYC Legally Operating Businsses database. Does the number of new business licenses statisticaly significant drops this year compare to previous years?
+My analysis dives into the current NYC Legally Operating Businsses database. Does the number of new business licenses statisticaly significant drops this year compare to previous years? Among the top 10 industries that require licenses, which industry has the most drops in numbers of licenses created this year compared to previous two years?
 
-* [General Information](#general-information)
+* [Background Introduction](#background-introduction)
+* [Data Information](#data-information)
     * [Data Gathering](#data-gathering)
-    * [Data Information](#data-information)
-    * [Hypothesis Testing](#hypothesis-testing)
-* [Technologies](#technologies)
-    * [Database](#database)
-    * [Python](#python)
-    * [Visualization](#visualization)
-* [Future Improvements](#future-improvements)
+    * [Data Cleaning](#data-cleaning)
+    * [Data Visulization](#data-vissulization)
+* [Hypothesis Testing](#hypothesis-testing)
+* [Conclusion](#conclusion)
+* [Future Analysis](#future-analysis)
 
-## General Information
-This data set features businesses/individuals holding a DCA license so that they may legally operate in New York City.DCA enforces the Consumer Protection Law and other related business laws throughout New York City. Ensuring a fair and vibrant marketplace for consumers and businesses, DCA licenses moe than 71,000 businesses in 57 different industries. Through targeted outreach, partnerships with community and trade organizations, and informational materials, DCA educates consumers and businesses alike about their rights and responsibilities.
+## Background Introduction
+The Department of Consumers Affairs (DCA) enforces the Consumer Protection Law and other related business laws throughout New York City. Ensuring a fair and vibrant marketplace for consumers and businesses, DCA licenses more than 71,000 businesses in 57 different industries. Through targeted outreach, partnerships with community and trade organizations, and informational materials, DCA educates consumers and businesses alike about their rights and responsibilities.
+
+## Data Information
+This data set features businesses/individuals holding a DCA license so that they may legally operate in New York City. It contains information of the NYC department of consumer affairs issued licenses from 2003 to 2020.
+<p align="center">
+  <img src="img/raw_dats_screenshot.png">
+</p>
 
 ### Data Gathering:
 <p align="center">
   <img src="img/NYCOpenData.png">
 </p>
 
-Data used for this analysis was gathered from NYCOpenData website.---------
+Data used for this analysis was gathered from NYCOpenData website.
 
-1)  Downloading:  The dataset was downloaded from NYCOpenData website.----- 
-2)  Transform:  It was transformed into a clean pandas dataframe through custom functions, located on the ```src``` folder.
-3)  Cleansing:  ------------- 
+1)  Downloading:  The dataset was downloaded from NYCOpenData website.The raw data is about 62 MB with 27 features and more than 260 thousand observations.
+2)  Transform:  It was transformed into a clean pandas dataframe for future analysis.
 
-### Data Information:
+### Data Cleaning:
 Data used in the study included DCA License Number, Type(Individual/Business), License Creation/Expiration Date, Industry, and the localtion informations about the business, ie: City, Zipcode, and coordinate in NYC from April 2018 to September 2020.
 
-### Hypothesis Testing:
+### Data Visulization:
+By observing the original dataset I found out that there are 57 industries requires a DCA license in order to perform business in NYC area.
+So I started off by generating a bar graph to show the top 10 industries that require license in NYC from 2003 to present by using Matplotlib.
+<p align="left">
+  <img src="img/top_10_industry.png">
+</p>
+
+## Hypothesis Testing
 
 ###### Step 1: Set up the hypothesis
 The null hypothesis is that the number of new DCA license created in 2020 has no statistically significant difference to the number of new DCA license created in 2018 and 2019.
