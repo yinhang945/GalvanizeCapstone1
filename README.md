@@ -16,7 +16,7 @@ The Department of Consumers Affairs (DCA) enforces the Consumer Protection Law a
 
 ## Data Information
 This data set features businesses/individuals holding a DCA license so that they may legally operate in New York City. It contains information of the NYC department of consumer affairs issued licenses from 2003 to 2020.
-<p align="center">
+<p align="left">
   <img src="img/raw_dats_screenshot.png">
 </p>
 
@@ -39,11 +39,21 @@ So I started off by generating a bar graph to show the top 10 industries that re
 <p align="left">
   <img src="img/top_10_industry.png">
 </p>
+As mentioned in data cleaning section, I choose to focus on new license created of the past 3 years since the data are more recent. I narrowed down the range of my dataset to the month of April to September which is the same time interval for the pandamic outbreak.From the heatmap you can see there is a drop of numbers of new license being granted from the year of 2018 to 2020.
+<p align="left">
+  <img src="img/heatmap_comparision.png">
+</p>
 
 ## Hypothesis Testing
+By observing the 3D bar graph I created using matplotlib, I was able to observe that the number of new license being granted in 2020 is dropped drasticly compared to the previous two years.
+<p align="left">
+  <img src="img/3D_bar.png">
+</p>
+I would like to find out whether or not the drop is statistically significant.So I conducted a hypothesis testing by following steps below:
 
 ###### Step 1: Set up the hypothesis
-The null hypothesis is that the number of new DCA license created in 2020 has no statistically significant difference to the number of new DCA license created in 2018 and 2019.
+The null hypothesis is that the mean of licenses granted in 2020 has no change comparing to the mean of licenses granted in previous years(2018 and 2019).
+
 
 Alternative hypothesis is that there is a significant difference to the mean value of new DCA License granted.
 
@@ -57,41 +67,24 @@ The significance level was set at: 0.05
 
 The Welch's t-test, does not assume the two populations from which the samples are drawn have the same variance.
 
-<p align="center">
-  <img src="images/z-statistic.png">
-</p>
-
 ###### Step 3: Set up decision rule
 Reject the null hypothesis if p-value is less than our threshold alpha=0.05.
-<p align="center" style="width:10%" >
-  <img src="images/normdist.png">
-</p>
 
 ###### Step 4: Compute the test statistic
-------------
 
-![](images/z-score.png)
 
-###### Step 5: Conclusion
+## Conclusion
 Given the results of our test we conclude that we must reject the null-hypothesis.  There is enough evidence to say that the number of new DCA license being granted was dropped comparing to the number of new DCA license granted from the previous two years. 
 The t-statistics of 14.678045591103883 with a p-value of 3.2720431903438374e-32 well below our 0.05 significance level. 
-
-## Technologies
-<p align="center">
-  <img src="images/logos.png">
+<p align="left">
+  <img src="scatter_plot.png">
 </p>
-
-###### Database:
-Data Storage: Mongodb<br>
-
-###### Python:
-Data Gathering: Beautiful Soup, Selenium<br>
-Data Analysis: Python 3, Numpy, Pandas, Scikit-Learn, Scipy<br>
-
-###### Visualization:
-Data Visualization: Tableau, Folium, Matplotlib, Seaborn
+<p align="left">
+  <img src="box_plot.png">
+</p>
+From the graphs above we can easily conclude that there is a significant drop of new license granted number bertween 2020 and the previous years.
 
 ## Future Improvements
-• Enrich the dataset by continue to run scrapers over a 12 month-period.<br>
-• Bring historic data to analyze market trends.<br>
-• Incorporate size of all rooms in of all homes.<br>
+• Analysis of changes in new licenses granted by different industry.<br>
+• Bring covid-19 data to analyze correlation between new license granted number declined and the covid-19 outbreak.<br>
+
