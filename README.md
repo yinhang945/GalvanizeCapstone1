@@ -77,14 +77,14 @@ Reject the null hypothesis if p-value is less than our threshold alpha=0.05.
 Given the results of our test we conclude that we must reject the null-hypothesis.  There is enough evidence to say that the number of new DCA license being granted was dropped comparing to the number of new DCA license granted from the previous two years. 
 The t-statistics of 14.678045591103883 with a p-value of 3.2720431903438374e-32 well below our 0.05 significance level. 
 <p align="left">
-  <img src="scatter_plot.png">
+  <img src="img/scatter_plot.png">
 </p>
 <p align="left">
-  <img src="box_plot.png">
+  <img src="img/box_plot.png">
 </p>
 From the graphs above we can easily conclude that there is a significant drop of new license granted number bertween 2020 and the previous years.
 
-## Future Improvements
+## Future Analysis
 • Analysis of changes in new licenses granted by different industry.<br>
 • Bring covid-19 data to analyze correlation between new license granted number declined and the covid-19 outbreak.<br>
 
