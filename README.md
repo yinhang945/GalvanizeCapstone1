@@ -1,4 +1,4 @@
-# NYC Legally Operating Businesses Analysis(Draft)
+# NYC Legally Operating Businesses Analysis
 
 My analysis dives into the current NYC Legally Operating Businsses database. Does the number of new business licenses statisticaly significant drops this year compare to previous years? Among the top 10 industries that require licenses, which industry has the most drops in numbers of licenses created this year compared to previous two years?
 
